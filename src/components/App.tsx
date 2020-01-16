@@ -2,11 +2,13 @@ import React, { FC } from 'react'
 import { hot } from 'react-hot-loader/root'
 import styled from '@emotion/styled'
 import Header from './Header'
+import { SearchResults } from './SearchResults'
 
 const App: FC = () => {
   return (
     <Container>
       <Header />
+      <SearchResults />
       {/* Happy coding! */}
     </Container>
   )

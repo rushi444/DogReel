@@ -2,7 +2,6 @@ import { Dispatch } from 'redux';
 import axios from 'axios'
 import { DispatchAction, ActionType } from './reducer'
 
-
 export class RootDispatcher {
     private readonly dispatch: Dispatch<DispatchAction>;
 
@@ -23,7 +22,6 @@ export class RootDispatcher {
             this.dispatch({ type: ActionType.SearchBreed, payload: res.data })
         } catch (err) {
             this.dispatch({ type: ActionType.SearchBreedError, payload: {} })
-            console.log(err)
         }
     }
     toggleLike = (url: any) => {
