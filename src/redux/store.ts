@@ -1,4 +1,4 @@
 import { createStore } from 'redux'
-import { rootReducer, DispatchAction, InitialState } from './reducer'
+import { rootReducer, InitialState } from './reducer'
 
-export default createStore<InitialState, DispatchAction, null, null>(rootReducer)
+export default createStore<InitialState, null, null, null>(rootReducer)

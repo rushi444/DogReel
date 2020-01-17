@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader/root'
 import styled from '@emotion/styled'
 import Header from './Header'
 import { SearchResults } from './SearchResults'
-import { SearchBar } from './Searchbar'
+import { SearchBar } from './SearchBar'
 import { Favorites } from './Favorites'
 
 const App: FC = () => {
