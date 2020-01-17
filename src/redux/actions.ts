@@ -28,7 +28,7 @@ export class RootDispatcher {
             this.dispatch({ type: SEARCH_BREED_ERROR, payload: {} })
         }
     }
-    toggleLike = (url: any) => {
+    toggleLike = (url: string) => {
         try {
             this.dispatch({ type: TOGGLE_LIKE, payload: url })
         } catch (err) {
