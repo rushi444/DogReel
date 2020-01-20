@@ -7,8 +7,8 @@ export interface DefaultImages {
 }
 
 export interface InitialState {
-  images: DefaultImages | any
-  liked: string[] | any
+  images: DefaultImages 
+  liked: string[]
   error: string
 }
 

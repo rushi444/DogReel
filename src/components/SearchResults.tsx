@@ -27,10 +27,9 @@ export const SearchResults: FC = () => {
     <>
       {error && <div>{error}</div>}
       <ImageContainer>
-        {images?.message.map(
-          (image: string, index: number) =>
-            index < 12 && <DogImage imageLink={image} key={index} />,
-        )}
+        {images?.message.map((image: string, index: number) => (
+          <DogImage imageLink={image} key={index} />
+        ))}
       </ImageContainer>
     </>
   )

@@ -22,7 +22,7 @@ export class RootDispatcher {
     }
     searchBreed = async (breed: string) => {
         try {
-            let res = await axios.get(`https://dog.ceo/api/breed/${breed.toLowerCase()}/images`)
+            let res = await axios.get(`https://dog.ceo/api/breed/${breed.toLowerCase()}/images/random/12`)
             this.dispatch({ type: SEARCH_BREED, payload: res.data })
         } catch (err) {
             this.dispatch({ type: SEARCH_BREED_ERROR, payload: {} })
